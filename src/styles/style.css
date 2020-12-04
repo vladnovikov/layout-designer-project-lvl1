@@ -6,6 +6,7 @@
   --light-coloured: #f5f4f0;
   --main: #fe8a02;
   --dark: #2a2626;
+  --primary-dark: #42413c;
   --translucent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
@@ -44,12 +45,16 @@ h3 {
   font-size: 34px;
 }
 
-section {
+.video-block {
+  overflow: hidden;
+
+  background: var(--white);
+}
+
+.video-div {
   position: relative;
 
   z-index: 1;
-
-  width: 100%;
 
   max-width: 1100px;
 
@@ -67,8 +72,6 @@ header {
   z-index: 1;
 
   display: flex;
-
-  width: 100%;
 
   overflow: hidden;
 
@@ -149,10 +152,6 @@ img {
   text-transform: uppercase;
 }
 
-main {
-  position: relative;
-}
-
 .center-text {
   margin-top: 0;
   margin-bottom: 30px;
@@ -173,19 +172,85 @@ main {
   text-align: center;
 }
 
-.cards {
+.cards-text {
+  width: 350px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--white);
+
+  font-size: 52px;
+}
+
+.cards-block {
+  position: relative;
   top: -200px;
 
   z-index: 0;
 
   padding-top: 200px;
+  padding-bottom: 100px;
 
-  background: var(--dark);
+  overflow: hidden;
+
+  background: var(--primary-dark);
 }
 
-.cards-text {
+.cards-div {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 0 0 0;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+.card {
+  justify-content: space-between;
+  width: 302px;
+  margin: 0 0 24px 0;
+  padding: 24px;
+
+  background: var(--light-coloured);
+}
+
+.card:hover {
+  background: var(--main);
+}
+
+.card:hover h3 {
+  color: var(--white);
+}
+
+.card:hover h2 {
+  color: var(--white);
+}
+
+.card:hover p {
+  color: var(--white);
+}
+
+.cards-h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  font-size: 64px;
+}
+
+.cards-h3 {
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--main);
 
-  color: var(--white);
+  font-size: 34px;
+}
+
+.cards-p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
