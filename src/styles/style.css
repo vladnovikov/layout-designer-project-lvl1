@@ -27,7 +27,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: normal;
   font-family: "Neucha", sans-serif;
   line-height: 1.2em;
@@ -43,6 +44,10 @@ h2 {
 
 h3 {
   font-size: 34px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 .video-block {
@@ -111,7 +116,7 @@ header::before {
   content: " ";
 }
 
-img {
+.hero-img {
   position: absolute;
 
   top: 55px;
@@ -183,10 +188,9 @@ img {
 }
 
 .cards-block {
-  position: relative;
-  top: -200px;
-
   z-index: 0;
+
+  margin-top: -200px;
 
   padding-top: 200px;
   padding-bottom: 100px;
@@ -240,11 +244,13 @@ img {
   margin-bottom: 40px;
 
   font-size: 64px;
+  line-height: 1;
 }
 
 .cards-h3 {
   margin-top: 0;
   margin-bottom: 0;
+
   color: var(--main);
 
   font-size: 34px;
@@ -253,4 +259,234 @@ img {
 .cards-p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.cognitive-directions-light {
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  overflow: hidden;
+
+  background: var(--light-coloured);
+}
+
+.cognitive-directions-light::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background: url('../img/background.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: " ";
+}
+
+
+.cognitive-directions-dark {
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  overflow: hidden;
+
+  background: var(--brown);
+}
+
+.cognitive-directions-dark::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background: url('../img/background.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: " ";
+}
+
+.cognitive-directions-light-h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--translucent-dark);
+
+  font-size: 24px;
+}
+
+.cognitive-directions-light-h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 60px;
+}
+
+.cognitive-directions-light-h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 34px;
+}
+
+.cognitive-directions-dark-h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--white);
+
+  font-size: 24px;
+}
+
+.cognitive-directions-dark-h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--white);
+
+  font-size: 60px;
+}
+
+.cognitive-directions-dark-h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--white);
+
+  font-size: 34px;
+}
+
+.cognitive-directions-right-img {
+  margin-right: 5px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.cognitive-directions-left-img {
+  margin-left: 30px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.cognitive-directions-content-dark {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.cognitive-directions-content {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.cognitive-directions-light-line {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0 0 0 0;
+
+  background: var(--brown);
+}
+
+.cognitive-directions-light-p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 8px;
+
+  color: var(--white);
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cognitive-directions-light-row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 -30px;
+}
+
+.cognitive-directions-light-col {
+  flex: 1 1 auto;
+  width: calc((100% - 30px) / 2);
+  margin: 0 30px;
+}
+
+.cognitive-directions-dark-line {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0 0 0 0;
+
+  background: var(--white);
+}
+
+.cognitive-directions-dark-p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 8px;
+
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cognitive-directions-dark-row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 -30px;
+}
+
+.cognitive-directions-dark-col {
+  flex: 1 1 auto;
+  width: calc((100% - 30px) / 2);
+  margin: 0 30px;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.cognitive-directions-p-light {
+  color: var(--white);
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-4 {
+  margin-left: 30px;
+}
+
+.width-540 {
+  width: 540px;
 }
