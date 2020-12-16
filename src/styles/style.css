@@ -1,4 +1,7 @@
 /** CSS STYLE **/
+* {
+  margin-top: 0;
+}
 
 :root {
   --white: #fff;
@@ -25,6 +28,34 @@ body {
   border: 0;
 }
 
+.relative {
+  position: relative;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.underline-none {
+  text-decoration: none;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 h1,
 h2,
 h3,
@@ -48,6 +79,10 @@ h3 {
 
 h4 {
   font-size: 24px;
+}
+
+.margin-bottom-250 {
+  margin-bottom: 250px;
 }
 
 .video-block {
@@ -94,7 +129,7 @@ header {
   padding-bottom: 100px;
 }
 
-.h1-main {
+.color-orange {
   color: var(--main);
 }
 
@@ -130,7 +165,6 @@ header::before {
   display: flex;
   flex-wrap: nowrap;
   margin: 0 -30px;
-  padding-top: inherit;
 }
 
 .col {
@@ -154,14 +188,14 @@ header::before {
   font-size: 16px;
   font-style: normal;
   line-height: 160%;
-  text-transform: uppercase;
 }
 
-.center-text {
-  margin-top: 0;
+.margin-bottom-30 {
   margin-bottom: 30px;
+}
 
-  text-align: center;
+.margin-bottom-100 {
+  margin-bottom: 100px;
 }
 
 .video {
@@ -171,7 +205,6 @@ header::before {
 }
 
 .iframe {
-  margin-top: 0;
   margin-bottom: 0;
 
   text-align: center;
@@ -179,7 +212,6 @@ header::before {
 
 .cards-text {
   width: 350px;
-  margin-top: 0;
   margin-bottom: 0;
 
   color: var(--white);
@@ -240,7 +272,6 @@ header::before {
 }
 
 .cards-h2 {
-  margin-top: 0;
   margin-bottom: 40px;
 
   font-size: 64px;
@@ -248,7 +279,6 @@ header::before {
 }
 
 .cards-h3 {
-  margin-top: 0;
   margin-bottom: 0;
 
   color: var(--main);
@@ -257,7 +287,6 @@ header::before {
 }
 
 .cards-p {
-  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -322,7 +351,6 @@ header::before {
 }
 
 .cognitive-directions-light-h4 {
-  margin-top: 0;
   margin-bottom: 0;
 
   color: var(--translucent-dark);
@@ -331,21 +359,18 @@ header::before {
 }
 
 .cognitive-directions-light-h2 {
-  margin-top: 0;
   margin-bottom: 0;
 
   font-size: 60px;
 }
 
 .cognitive-directions-light-h3 {
-  margin-top: 0;
   margin-bottom: 0;
 
   font-size: 34px;
 }
 
 .cognitive-directions-dark-h4 {
-  margin-top: 0;
   margin-bottom: 0;
 
   color: var(--white);
@@ -354,7 +379,6 @@ header::before {
 }
 
 .cognitive-directions-dark-h2 {
-  margin-top: 0;
   margin-bottom: 30px;
 
   color: var(--white);
@@ -363,7 +387,6 @@ header::before {
 }
 
 .cognitive-directions-dark-h3 {
-  margin-top: 0;
   margin-bottom: 0;
 
   color: var(--white);
@@ -416,7 +439,6 @@ header::before {
 }
 
 .cognitive-directions-light-p {
-  margin-top: 0;
   margin-bottom: 0;
   margin-left: 8px;
 
@@ -448,7 +470,6 @@ header::before {
 }
 
 .cognitive-directions-dark-p {
-  margin-top: 0;
   margin-bottom: 0;
   margin-left: 8px;
 
@@ -488,4 +509,115 @@ header::before {
 
 .width-540 {
   width: 540px;
+}
+
+.h2-36 {
+  font-size: 36px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.footer {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 1100px;
+
+  background: var(--primary-dark);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+.footer-input {
+  width: 334px;
+  height: 31px;
+
+  padding: 10px 44px 9px 16px;
+
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+
+  line-height: 160%;
+
+  border: 0;
+}
+
+.padding-55-10-55-52 {
+  padding: 55px 10px 55px 52px;
+}
+
+.padding-43-75-41-115 {
+  padding: 43px 75px 41px 105px;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.margin-top-8 {
+  margin-top: 8px;
+}
+
+.input-button {
+  position: relative;
+  z-index: 0;
+
+  width: 72px;
+  height: 50px;
+
+  color: var(--white);
+
+  background: var(--main);
+
+  border: none;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: nowrap;
+
+  background: var(--primary-dark);
+}
+
+.input-button::before {
+  position: absolute;
+  top: 16px;
+  left: 26px;
+  z-index: 1;
+
+  width: 20px;
+  height: 20px;
+
+  background: url('../img/send.svg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: " ";
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.text-align-center {
+  text-align: center;
 }
