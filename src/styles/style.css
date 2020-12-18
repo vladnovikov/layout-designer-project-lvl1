@@ -621,3 +621,12 @@ header::before {
 .text-align-center {
   text-align: center;
 }
+
+.card a {
+  display: block;
+  height: 100%;
+}
+
+.color-dark {
+  color: var(--dark);
+}
