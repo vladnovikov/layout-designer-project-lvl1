@@ -192,7 +192,7 @@ header::before {
 
   top: 55px;
 
-  left: 270px;
+  right: -270px;
 
   height: 525px;
 }
