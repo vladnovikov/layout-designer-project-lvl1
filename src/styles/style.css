@@ -168,8 +168,8 @@ header::before {
   margin-bottom: 100px;
 }
 
-.margin-bottom-197 {
-  margin-bottom: 197px;
+.margin-bottom-200 {
+  margin-bottom: 200px;
 }
 
 .padding-55-10-55-52 {
@@ -199,13 +199,13 @@ header::before {
 
 .row {
   flex-wrap: nowrap;
-  margin: 0 -30px;
+  margin: 0 -15px;
 }
 
 .col {
   flex: 1 1 auto;
   width: calc((100% - 30px) / 2);
-  margin: 0 30px;
+  margin: 0 15px;
 }
 
 .button {
